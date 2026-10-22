@@ -97,6 +97,12 @@
             padding: 10px;
             border-bottom: 1px solid #ddd;
         }
+        .separator {
+            width: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: #0c365b;
+        }
         div div div table{
             padding: 10px;
         }
@@ -148,100 +154,103 @@
             margin: 0;
         }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
 
-    .container {
-        max-width: 95%;
-        margin: 20px auto;
-        padding: 10px;
-    }
+            .container {
+                max-width: 95%;
+                margin: 20px auto;
+                padding: 10px;
+            }
 
-    .header {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 10px;
-        background-position: center;
-        background-size: cover;
-    }
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px 10px;
+                background-position: center;
+            }
 
-    .header img {
-        width: 110px;
-        height: 110px;
-        margin: 0 auto 10px auto;
-    }
+            .header img {
+                width: 110px;
+                height: 110px;
+                margin: 0 auto 10px auto;
+            }
 
-    .header .title h1 {
-        font-size: 1.6rem;
-        margin: 0;
-    }
+            .header .title h1 {
+                font-size: 1.6rem;
+                margin: 0;
+            }
 
-    .header .title p {
-        font-size: 0.95rem;
-    }
+            .header .title p {
+                font-size: 0.95rem;
+            }
 
-    .menuLompat ul {
-        flex-wrap: wrap;
-        gap: 6px;
-        padding: 8px;
-    }
+            .menuLompat ul {
+                flex-wrap: wrap;
+                gap: 6px;
+                padding: 8px;
+            }
 
-    .menuLompat ul li {
-        margin: 0;
-        width: 100%;
-    }
+            .menuLompat ul li {
+                margin: 0;
+                width: 100%;
+            }
 
-    .menuLompat ul li a {
-        display: block;
-        text-align: center;
-        padding: 10px;
-    }
+            .menuLompat ul li a {
+                display: block;
+                text-align: center;
+                padding: 10px;
+            }
 
-    .garis h1 {
-        font-size: 1.3rem;
-        padding-left: 0;
-    }
+            .garis h1 {
+                font-size: 1.3rem;
+                padding-left: 0;
+            }
 
-    .bio table,
-    .keahlian table,
-    .riwayat_sekolah table,
-    .kontak table {
-        width: 100%;
-        display: block;
-        overflow-x: auto;
-    }
+            .bio table,
+            .keahlian table,
+            .riwayat_sekolah table,
+            .kontak table {
+                width: 100%;
+                display: block;
+            }
 
-    .bio tr,
-    .keahlian tr,
-    .riwayat_sekolah tr,
-    .kontak tr {
-        display: block;
-        margin-bottom: 12px;
-    }
+            .bio tr,
+            .keahlian tr,
+            .riwayat_sekolah tr,
+            .kontak tr {
+                display: block;
+                margin-bottom: 12px;
+            }
 
-    .bio td,
-    .keahlian td,
-    .riwayat_sekolah td,
-    .kontak td {
-        display: block;
-        width: 100%;
-        border: none;
-        padding: 6px 0;
-    }
+            .bio td,
+            .keahlian td,
+            .riwayat_sekolah td,
+            .kontak td {
+                display: block;
+                width: 100%;
+                border: none;
+                padding: 6px 0;
+                box-sizing: border-box;
+            }
 
-    .btn {
-        display: block;
-        text-align: center;
-        width: 100%;
-        box-sizing: border-box;
-    }
+            .separator {
+                display: none;
+            }
 
-    .footer .quote-text {
-        font-size: 13px;
-    }
-}
+            .btn {
+                display: block;
+                text-align: center;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .footer .quote-text {
+                font-size: 13px;
+            }
+        }
         </style>
 </head>
 <body>
@@ -267,32 +276,32 @@
                 <table>
                     <tr>
                         <td>Nama</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td>Mohammad Hafid Fathur Rouf</td>
                     </tr>
                     <tr>
                         <td>TTL</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td>Nganjuk, 21 April 2007</td>
                     </tr>
                     <tr>
                         <td>Alamat</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td>JL. Letjen Suprapto 1a No. 21</td>
                     </tr>
                     <tr>
                         <td>Pekerjaan</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td>Mahasiswa</td>
                     </tr>
                     <tr>
                         <td>Cita-cita</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td>Freelance</td>
                     </tr>
                     <tr>
                         <td>Pandangan hidup</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td>-</td>
                     </tr>
                 </table>
@@ -303,32 +312,32 @@
                 <table>
                     <tr>
                         <td>HTML</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td><span class="badge badge-mampu">mampu</span></td>
                     </tr>
                     <tr>
                         <td>CSS</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td><span class="badge badge-mampu">mampu</span></td>
                     </tr>
                     <tr>
                         <td>JavaScript</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td><span class="badge badge-pemula">pemula</span></td>
                     </tr>
                     <tr>
                         <td>PHP</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td><span class="badge badge-mampu">mampu</span></td>
                     </tr>
                     <tr>
                         <td>Python</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td><span class="badge badge-mampu">mampu</span></td>
                     </tr>
                     <tr>
                         <td>SQL</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td><span class="badge badge-mampu">mampu</span></td>
                     </tr>
                 </table>
@@ -339,22 +348,22 @@
                 <table>
                     <tr>
                         <td>MI Al-Huda Bonggah Ploso Nganjuk</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td>2013-2019</td>
                     </tr>
                     <tr>
                         <td>MTsN 5 Nganjuk</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td>2019-2022</td>
                     </tr>
                     <tr>
                         <td>SMK Al-Basthomi Mojosari</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td>2022-2025</td>
                     </tr>
                     <tr>
                         <td>STMIK El-Rahma</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td>2025-sekarang</td>
                     </tr>
                 </table>
@@ -365,27 +374,27 @@
                 <table>
                     <tr>
                         <td>No HP</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td>085850830100</td>
                     </tr>
                     <tr>
                         <td>Email</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td>aafid204@gmail.com</td>
                     </tr>
                     <tr>
                         <td>Facebook</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td><a href="https://www.facebook.com/profile.php?id=100049053364302" target="_blank">Profil Facebook</a></td>
                     </tr>
                     <tr>
                         <td>Instagram</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td><a href="https://www.instagram.com/fid_weeb/" target="_blank">@fid_weeb</a></td>
                     </tr>
                     <tr>
                         <td>GitHub</td>
-                        <td>:</td>
+                        <td class="separator">:</td>
                         <td><a href="https://github.com/KasyLoi" target="_blank">KasyLoi</a></td>
                     </tr>
                 </table>
